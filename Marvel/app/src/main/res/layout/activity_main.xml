@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snehal2398.marvel.MainActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:background="@color/colorPrimary"
+        android:contextClickable="false"
+        android:padding="0dp"
+        app:elevation="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:itemIconTint="@drawable/drawer_item"
+        app:itemTextColor="@drawable/drawer_item"
+        app:itemBackground="@android:color/transparent"
+
+    app:menu="@menu/navigation" >
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="#e2e5e7"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="center_horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_event"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Android Event Start"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="0dp"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:scrollX="0dp"
+                        android:scrollY="-5dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_days_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Day"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_hour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_hour_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Hour"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_minute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_minute_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Minute"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_second_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Second"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="true"
+                android:scrollbarStyle="insideOverlay" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-7413671897533686/2414850244">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

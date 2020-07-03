@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "717980448303",
+    "firebase_url": "https://marvel-fan-a.firebaseio.com",
+    "project_id": "marvel-fan-a",
+    "storage_bucket": "marvel-fan-a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717980448303:android:8ddb44b12b7f069e",
+        "android_client_info": {
+          "package_name": "com.snehal2398.marvel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717980448303-mvheoe4ntltn6h9u3o7aocba67qs3b6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhQp_h1ZdrEnkDX68s3ZICl3KRtbJDfEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

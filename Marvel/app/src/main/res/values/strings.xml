@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_feed">Feed</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7413671897533686/2414850244</string>
+
+</resources>

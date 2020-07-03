@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="5dp"
+    android:elevation="0dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:text="POST TITLE"
+            android:textColor="#ff0000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/post_image"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elegantTextHeight="true"
+            android:text="DESCRIPTION"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/post_title"
+            android:layout_marginEnd="40dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
